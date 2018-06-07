@@ -2,11 +2,12 @@ file = open("1002.ngc", "a+")
 def makeFile(path):
     code = []
     n = 50
-    for line in xyz:
+    for line in path:
         print(line)
         code.append("N" + str(n) + " G1 X" + str(line[0]) + " Y" + str(line[1]))
         n += 1
     print(code)
+    return code
 
 
 def cutTriangle(x1,y1,x2,y2,i):
